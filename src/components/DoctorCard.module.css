@@ -1,0 +1,105 @@
+
+   .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .image {
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .specialization {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .specialization span {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #333;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 20px;
+  }
+  
+  .actions {
+    margin-top: 20px;
+    display: flex;
+    gap:5px;
+
+  }
+  
+  .viewProfileBtn,
+  .bookAppointmentBtn {
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .viewProfileBtn {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+  }
+  
+  .bookAppointmentBtn {
+    background-color: #f7d9d9;
+    color: #d9534f;
+  }
+  
+  .viewProfileBtn:hover,
+  .bookAppointmentBtn:hover {
+    opacity: 0.9;
+  }
+  .cardfix{
+    display: flex;
+    gap: 20px;
+  }
+  .textfix{
+    display:flex;
+    flex-direction: column;
+   justify-content: start;
+  
+   align-items: start;
+ 
+  }
+  .textfix h2{
+    font-weight: bold;
+    text-align: start;
+  }
+  .textfix .position{
+    text-align: start;
+    font-size: 12px;
+    font-weight: 700;
+    color:#7c7c7c;
+  }
+  .actions{
+    display: flex;
+    justify-content: space-around;
+  }

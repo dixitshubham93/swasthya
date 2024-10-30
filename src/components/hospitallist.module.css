@@ -1,0 +1,26 @@
+.hospitalListContainer {
+    padding: 20px;
+    text-align: center;
+}
+
+.hospitalListHeading {
+    font-size: 1.8rem;
+    color: #3b8dbd;
+    margin-bottom: 20px;
+}
+
+.hospitalList {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hospitalListItem {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+}

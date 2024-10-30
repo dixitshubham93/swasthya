@@ -1,0 +1,72 @@
+/* Container for Ambulance Cards */
+.ambulanceCardContainer {
+    padding: 20px;
+    background: #f4f7fa;
+    display: flex;
+    gap:10px; /* Light gray background for the container */
+  }
+  
+  .ambulanceSet {
+    margin-bottom: 40px;
+}
+
+.ambulanceCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Increased space between cards */
+    justify-content: center; /* Center align the cards */
+  }
+  
+  .ambulanceCard {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+   /* 4 cards per row, adjust for gap */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    text-align: center; /* Center align text */
+  }
+  
+  .ambulanceCard:hover {
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+  }
+  
+  .ambulanceDetails p {
+    margin: 15px 0;
+    font-size: 16px; /* Increased font size for details */
+    color: #333; /* Darker text for better readability */
+  }
+  
+  .statusBadge {
+    display: inline-block;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 25px;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 16px; /* Reverted text size for status badges */
+  }
+  
+  .occupied {
+    background: linear-gradient(135deg, #ff6b6b, #ff3f3f); /* Gradient for occupied */
+  }
+  
+  .available {
+    background: linear-gradient(135deg, #51cf66, #1cbb5a); /* Gradient for available */
+  }
+  
+  /* Headings */
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff; /* Primary color for heading */
+    font-size: 28px; /* Larger font size for main heading */
+  }
+  
+  h2 {
+    color: #0056b3; /* Slightly darker blue for set titles */
+    margin-bottom: 20px;
+    font-size: 22px; /* Larger font size for set titles */
+  }

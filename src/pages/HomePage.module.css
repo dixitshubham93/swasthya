@@ -1,0 +1,191 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+    animation: gradientBackground 15s infinite alternate;
+    overflow-x: hidden;
+    }
+    @keyframes gradientBackground {
+      0% { background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%); }
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(to right, #0099f8, #23ebf9);
+      padding: 10px 50px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+      border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .logo {
+      font-size: 28px;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    
+    .navButtons {
+      padding: 3px;
+      display: flex;
+      gap: 20px;
+    }
+    
+    .loginButton:hover,
+  .emergencyButton:hover {
+    background: linear-gradient(135deg, #42e695, #3bb2b8);
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+  .chatbotIcon:hover{
+      transform: scale(1.2);
+      background: linear-gradient(135deg, #42e695, #3bb2b8);
+      box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4);
+  }
+  .emergencyButton:hover {      
+    background: linear-gradient(135deg, #42e695, #3bb2b8);
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Darker orange for emergency button */
+  }
+  
+    .loginButton {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      background: linear-gradient(135deg, #ff000d, #ff0000);
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .emergencyButton {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      background: linear-gradient(135deg, #ff000d, #ff0000);
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+  
+    .emergencybutton:hover {
+      background: linear-gradient(135deg, #42e695, #3bb2b8);
+      transform: scale(1.1);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+    
+    .mainContent {
+      height: calc(100vh - 120px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    
+    .searchBox {
+      width: 50%;
+      max-width: 600px;
+      padding: 15px 20px;
+      border-radius: 30px;
+      border: none;
+      font-size: 18px;
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    
+    .testimonials {
+      margin: 50px auto;
+      width: 100%;
+      max-width: 800px;
+      text-align: center;
+    }
+    
+    .h2{
+      font-weight: 800;
+      font-size: 32px;
+      padding: 20px;
+    }
+    .testimonialContainer {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    .testimonialCard {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .testimonialCard.active {
+      display: flex;
+    }
+    
+    .testimonialImage {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    .text{
+      font-size: 18px;
+      color: #666;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    .author {
+      font-weight: bold;
+      font-size: 20px;
+      color: #333;
+    }
+    
+    .role {
+      font-size: 14px;
+      color: #999;
+    }
+    
+     .chatbotIcon {
+      position: fixed;
+      bottom: 60px;
+      right: 40px;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      color: white;
+      padding: 20px;
+      border-radius: 50%;
+      font-size: 30px;
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    } 
+     
+    .footer {
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(to right, #2dd3e2, #007be0);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+      box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+    }
+    

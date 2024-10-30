@@ -1,0 +1,99 @@
+.bgsrc{
+    padding-top: 100px;
+    width:100%;
+    height:40vh;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    /* background-image:url('../images/healthcare1.jpg'); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10%;
+}
+
+  
+  .search-container{
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+  }
+  
+  .search-input {
+    width:30vw;
+    min-width:300px;
+    padding: 12px 23px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: width 0.4s ease, box-shadow 0.3s ease;
+  }
+  
+  .search-input:focus {
+    width: 40vw;
+    min-width:300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    
+  }
+  
+  .search-btn {
+    position: absolute;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: #666;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .search-btn:hover {
+    color: #333;
+  }
+  .sicon{
+    padding-top:10%;
+  }
+ 
+  .hero-section-heading{
+    font-size: 25px;
+    color: #2e4ad7;
+    font-weight: 500;
+}
+.hero-section-sub-heading{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+}
+.role{
+    color:white;
+}
+.suggestions-list {
+  position: absolute;
+  width: 100%;
+  max-height: 200px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  display: none; 
+}
+
+.suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
+}

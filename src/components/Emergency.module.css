@@ -1,0 +1,64 @@
+.hospitalList {
+    padding: 20px;
+    text-align: center;
+    margin-top:150px;
+}
+
+.hospitalsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hospitalCard {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.hospitalImg {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.hospitalName {
+    color: #3b8dbd;
+    margin-top: 10px;
+}
+
+.hospitalInfo {
+    margin: 10px 0;
+}
+
+.hospitalDistance {
+    font-weight: bold;
+}
+
+.cardActions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardActions button {
+    padding: 10px;
+    border: none;
+    background-color: #3b8dbd;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.cardActions button i {
+    margin-right: 8px;
+}
+
+.cardActions button:hover {
+    background-color: #1e6695;
+}

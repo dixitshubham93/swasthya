@@ -1,0 +1,132 @@
+/* Container Styling */
+.searchContainer {
+    border-radius: 50%;
+    width: 600px;
+    position: relative;
+    margin: 50px auto;
+}
+
+/* Search Box Styling with Enhanced Animation */
+.searchBox {
+    border-radius: 60%;
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius:90px ;
+}
+
+/* Focused Search Box Styling */
+.searchBox:focus {
+    border-color: #00bcd4;
+    background-color: #fff;
+    box-shadow: 0 8px 12px rgba(0, 188, 212, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Suggestions Styling */
+.suggestions {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    margin-top: 8px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideDown 0.4s ease forwards;
+    display: flex; /* Display suggestion groups side by side */
+    justify-content: space-between; /* Add space between groups */
+    padding: 10px 0;
+}
+
+/* Suggestion Group Styling */
+.suggestionGroup {
+    flex: 1;
+    margin: 0 10px;
+    overflow-y: auto;
+    max-height: 220px;
+}
+
+/* Suggestion Group Title Styling */
+.suggestionGroup h3 {
+    margin: 0 0 10px 0;
+    font-size: 15px;
+    color: #00bcd4;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Suggestion Item Styling */
+.suggestionItem {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover State for Suggestion Item */
+.suggestionItem:hover {
+    background-color: #f0f9f9;
+    transform: translateY(-3px);
+}
+
+/* Slide-down Animation for Suggestions */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hide{
+    display: none;
+}
+/* trial.module.css */
+
+.suggestions {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.suggestions.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.noResults {
+    padding: 10px;
+    color: #999;
+    text-align: center;
+}
+.searchholder
+{
+    display:flex;
+    align-items: center;
+    gap:5px;
+    border-radius:20px;
+}
+.searchbtn{
+    width: 30px;
+    height: 30px;
+}
+.searchbtnclick{
+    transform: scale(0.7);
+}
+.imgsearch{
+    margin-top: -19px;
+}

@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f0f4f7;
+    --font-color: #333;
+    --card-bg-color: #fff;
+    --border-color: #e0e0e0;
+    --heading-color: #2d2d2d;
+    --text-color: #555;
+    --accent-color: #7d8790;
+    --box-shadow: rgba(0, 0, 0, 0.1);
+  }
+  .ppc{
+    box-shadow: 0 8px 16px var(--box-shadow);
+    margin:auto auto;
+    padding: 20px;
+    position: relative;
+    width: 700px;
+  }
+  .pcc .card {
+    background-color: var(--card-bg-color);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px var(--box-shadow);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+    color: var(--font-color);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .ppc .card:hover {
+   box-shadow: 0 12px 24px var(--box-shadow);
+ }
+  
+  .ppc .patientimage{
+    margin-left: 450px;
+    margin-bottom:30px;
+    width: 170px;
+    height: 170px;
+  }
+  .ppc .name {
+    position: absolute;
+    top: 80px;
+    font-size: 26px;
+    color: var(--heading-color);
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .ppc .infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adds space between entries */
+    font-size: 16px;
+  }
+  
+  .ppc .info {
+    padding: 5px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ppc .label {
+    font-weight: bold;
+    color: var(--font-color-dark);
+  }
+  
+  .ppc .value {
+    color: var(--font-color-light);
+  }
+  
+  .ppc .info strong {
+    color: var(--font-color);
+  }
+  
+  .ppc .addReport {
+    margin-top: 20px;
+  }
+  
+  .ppc .uploadBtn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .ppc .fileInput {
+    display: none;
+  }
+  
+  .ppc .reportsSection {
+    margin-top: 20px;
+  }
+  
+  .ppc .reportsSection h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--heading-color);
+  }
+  
+  .ppc .reportImages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .ppc .reportImage {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .ppc .card {
+      padding: 15px;
+    }
+  
+    .ppc .name {
+      font-size: 22px;
+    }
+  
+    .ppc .info {
+      font-size: 14px;
+    }
+  
+    .ppc .uploadBtn {
+      padding: 8px 12px;
+    }
+  
+    .ppc .reportImage {
+      width: 80px;
+      height: 80px;
+    }
+  }

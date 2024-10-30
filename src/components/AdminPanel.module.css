@@ -1,0 +1,136 @@
+.adminContainer {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+  
+    color: #007bff;
+}
+.headingx{
+    font-size: xx-large;
+}
+.cardsContainer {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.doctorCard {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.doctorCard:hover {
+    transform: translateY(-10px);
+}
+
+.doctorInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.doctorPhoto {
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.doctorCard h2 {
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.patientQueue {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    max-height: 308px;
+    overflow-y: auto;
+}
+
+.patientQueue li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 1.1em;
+    background-color: #f9f9f9;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.queueNumber {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.removeBtn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.removeBtn:hover {
+    background-color: #e60000;
+}
+
+.addBtn {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.addBtn:hover {
+    background-color: #218838;
+}
+
+.cardsContainer::-webkit-scrollbar {
+    height: 10px;
+}
+
+.cardsContainer::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.cardsContainer::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+}
+
+.patientQueue::-webkit-scrollbar {
+    width: 8px;
+}
+
+.patientQueue::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.patientQueue::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+}

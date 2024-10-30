@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-color: #007BFF; /* Blue color */
+    --secondary-color: #ffffff; /* White color */
+    --text-color: #333333; /* Dark gray for text */
+    --background-color: #f0f8ff; /* Light blue background */
+    --button-hover-color: #0056b3; /* Darker blue for hover effect */
+    --border-color: #e0e0e0; /* Light gray border color */
+  }

@@ -1,0 +1,234 @@
+/* Adjuster for centering the content
+.adjuster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  }
+  
+  .container {
+    width: 60%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mainContent {
+    width: 100%;
+  }
+  
+  .contentHeader {
+    margin-bottom: 20px;
+  }
+  
+  .formContainer {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .formRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .formGroup {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .formGroup:last-child {
+    margin-right: 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .btnSubmit {
+    width: 100%;
+    padding: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: linear-gradient(to right, #fc00ff, #00dbde);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .btnSubmit:hover {
+    background: linear-gradient(to right, #d000ff, #00b3c4);
+  }
+  
+  .doctor {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .formRow {
+      flex-direction: column;
+    }
+  
+    .formGroup {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .btnSubmit {
+      width: 100%;
+    }
+  }
+  .mainContent h1
+  {
+    font-weight: bold;
+    font-size: x-large;
+  } */
+   /* Adjuster for centering the content */
+.adjuster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125vh;
+  background: linear-gradient(to right, #8ec5ff, #50d3ff); /* Blue gradient */
+}
+
+/* Main container styling */
+.container {
+  width: 60%;
+  max-width: 1200px;
+  background-color: #b6d5f1; /* Lighter blue for the background */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area */
+.mainContent {
+  width: 98%;
+}
+
+/* Header (can be customized if needed) */
+.contentHeader {
+  margin-bottom: 20px;
+}
+
+/* Form container styling */
+.formContainer {
+  height: 80vh;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Form row for grouping form elements */
+.formRow {
+  display: flex;
+  gap: 20px;
+
+  margin-bottom: 20px;
+}
+
+/* Form group for each input and label */
+.formGroup {
+  flex: 1;
+  /* padding: */
+  margin-right: 20px;
+}
+
+
+/* Remove margin-right for the last form group in the row */
+.formGroup:last-child {
+  margin-right: 0;
+}
+
+/* Label styling */
+label {
+  display: block;
+  
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #004085; /* Darker blue for labels */
+}
+
+/* Input and select styling */
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #00BFFF; /* Blue border */
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #f0f8ff; /* Light blue input background */
+}
+
+/* Submit button styling */
+.btnSubmit {
+  width: 100%;
+  padding: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: linear-gradient(to right, #007BFF, #00BFFF); /* Blue gradient */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+/* Submit button hover effect */
+.btnSubmit:hover {
+  background: linear-gradient(to right, #0056b3, #0080FF); /* Darker blue hover */
+}
+
+/* Additional styling for doctor input field */
+.doctor {
+  margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .formRow {
+    flex-direction: column;
+  }
+
+  .formGroup {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .btnSubmit {
+    width: 100%;
+  }
+}
+
+.mainContent h1 {
+  font-weight: bold;
+  font-size: x-large;
+  color: #004085; /* Darker blue for the heading */
+}
