@@ -130,3 +130,54 @@
 .imgsearch{
     margin-top: -19px;
 }
+/*  */
+/* Tablet screens */
+@media (max-width: 1024px) {
+    .searchContainer {
+        width: 80%;
+    }
+    .searchBox {
+        font-size: 15px;
+    }
+    .suggestionGroup h3 {
+        font-size: 14px;
+    }
+}
+
+/* Small tablets and large smartphones */
+@media (max-width: 768px) {
+    .searchContainer {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .searchBox {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+    .suggestions {
+        padding: 5px 0;
+    }
+    .suggestionGroup h3 {
+        font-size: 13px;
+    }
+    .suggestionItem {
+        padding: 8px;
+    }
+}
+
+/* Small smartphones */
+@media (max-width: 480px) {
+    .searchContainer {
+        width: 95%;
+    }
+    .searchBox {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+    .suggestionGroup h3 {
+        font-size: 12px;
+    }
+    .suggestionItem {
+        padding: 6px;
+    }
+}

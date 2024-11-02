@@ -22,6 +22,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
+      flex-wrap:  wrap ;
     }
     
     .logo {
@@ -189,3 +190,109 @@
       box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
     }
     
+    /*  */
+    /* Responsive Queries */
+
+/* Tablet screens (between 600px and 1024px) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .navButtons {
+    gap: 15px;
+  }
+
+  .loginButton,
+  .emergencyButton {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .mainContent {
+    height: calc(100vh - 100px);
+  }
+
+  .searchBox {
+    width: 70%;
+    font-size: 16px;
+  }
+
+  .h2 {
+    font-size: 28px;
+  }
+
+  .testimonialImage {
+    width: 120px;
+    height: 120px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .author {
+    font-size: 18px;
+  }
+
+  .chatbotIcon {
+    font-size: 26px;
+    padding: 15px;
+  }
+}
+
+/* Mobile screens (below 600px) */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 1px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .navButtons {
+    gap: 5px;
+  }
+
+  .loginButton,
+  .emergencyButton {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .mainContent {
+    height: calc(100vh - 90px);
+  }
+
+  .searchBox {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .h2 {
+    font-size: 24px;
+  }
+
+  .testimonialImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .author {
+    font-size: 16px;
+  }
+
+  .chatbotIcon {
+    font-size: 24px;
+    padding: 12px;
+  }
+}
